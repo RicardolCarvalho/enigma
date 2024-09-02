@@ -4,7 +4,7 @@ import enigma
 def main():
     alfabeto = "abcdefghijklmnopqrstuvwxyz "
     tupla = enigma.gerar_matrizes_de_permutacao(len(alfabeto))
-    mensagem = "o bolo de chocolate fica pronto quatro horas da tarde"
+    mensagem = input("Digite a mensagem: ")
 
     # Testando cifra simples
     cifrada = enigma.cifrar(mensagem, tupla[0])

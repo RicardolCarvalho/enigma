@@ -27,17 +27,7 @@ Se você quiser usar o pacote em um script, você pode importar o pacote e usar 
     
     ```python
     import enigma
+    import enigma.main
 
-    mensagem = 'o bolo de chocolate fica pronto quatro horas da tarde'
-    mensagem_cifrada = enigma.cifra(mensagem)
-    print(f'Mensagem cifrada: {mensagem_cifrada}')
-
-    mensagem_decifrada = enigma.decifra(mensagem_cifrada)
-    print(f'Mensagem decifrada: {mensagem_decifrada}')
-
-    mensagem_criptada = enigma.cifra_enigma(mensagem)
-    print(f'Mensagem criptada com Enigma: {mensagem_criptada}')
-
-    mensagem_decriptada = enigma.decifra_enigma(mensagem_criptada)
-    print(f'Mensagem decriptada com Enigma: {mensagem_decriptada}')
+    enigma.main.main()
     ```
