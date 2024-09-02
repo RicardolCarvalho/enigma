@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Enigma
 Um pacote minimalista em Python
 
@@ -41,3 +42,6 @@ Se você quiser usar o pacote em um script, você pode importar o pacote e usar 
     mensagem_decriptada = enigma.decifra_enigma(mensagem_criptada)
     print(f'Mensagem decriptada com Enigma: {mensagem_decriptada}')
     ```
+=======
+# enigma
+>>>>>>> 8ba7bbec1dec9f2399323f18164cb35806463dd8
