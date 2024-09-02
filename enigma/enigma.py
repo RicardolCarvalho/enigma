@@ -1,7 +1,6 @@
 import numpy as np
 from typing import Tuple
 
-# Variável global
 alfabeto = "abcdefghijklmnopqrstuvwxyz "
 
 def gerar_matrizes_de_permutacao(N: int) -> Tuple[np.ndarray, np.ndarray]:
@@ -84,20 +83,3 @@ def de_cifrar(msg: str, P: np.ndarray) -> str:
     matriz_mensagem = para_one_hot(msg)
     matriz_decifrada = np.linalg.inv(P) @ matriz_mensagem
     return para_string(matriz_decifrada)
-
-
-# Demonstração
-tupla = gerar_matrizes_de_permutacao(len(alfabeto))
-mensagem = "o bolo de chocolate fica pronto quatro horas da tarde"
-
-# Testando cifra simples
-cifrada = cifrar(mensagem, tupla[0])
-print(f"Mensagem cifrada: {cifrada}")
-decifrada = de_cifrar(cifrada, tupla[0])
-print(f"Mensagem decifrada: {decifrada}")
-
-# Testando cifra Enigma
-criptada_enigma = encriptar_enigma(mensagem, tupla[0], tupla[1])
-print(f"Mensagem criptada com Enigma: {criptada_enigma}")
-decriptada_enigma = decriptar_enigma(criptada_enigma, tupla[0], tupla[1])
-print(f"Mensagem decriptada com Enigma: {decriptada_enigma}")
