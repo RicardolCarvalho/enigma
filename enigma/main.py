@@ -2,7 +2,7 @@ import numpy as np
 import enigma
 
 def main():
-    alfabeto = "abcdefghijklmnopqrstuvwxyz "
+    alfabeto = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
     tupla = enigma.gerar_matrizes_de_permutacao(len(alfabeto))
     mensagem = input("Digite a mensagem: ")
 

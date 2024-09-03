@@ -1,7 +1,7 @@
 import numpy as np
 from typing import Tuple
 
-alfabeto = "abcdefghijklmnopqrstuvwxyz "
+alfabeto = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
 
 def gerar_matrizes_de_permutacao(N: int) -> Tuple[np.ndarray, np.ndarray]:
     """
